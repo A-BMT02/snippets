@@ -30,4 +30,15 @@ Make sure you have the following installed before making a contribution
 5. Run the project 
 ````npm run dev````
 
+# When Done Contributing
+1. Create a new branch using:
+````git checkout -b <BranchName>````
+2. Add to Stage using:
+````git add .````
+3. Commit changes using:
+````git commit -m 'enter-commit-message-here'````
+4. Push your changes using:
+````git push````
 
+# ❗ Reminder
+Dont forget to drop a star ✨ while you're here
