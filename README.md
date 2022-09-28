@@ -21,5 +21,13 @@ Make sure you have the following installed before making a contribution
 
 # 🛠️ Installation Steps
 1. Fork the project
-2. Clone the project
+2. Clone the project using the command:
+````git clone https://github.com/<your-github-username>/snippets````
+3. Navigate to the project directory using:
+````cd snippets````
+4. Install the Dependencies using:
+````npm install````
+5. Run the project 
+````npm run dev````
+
 
