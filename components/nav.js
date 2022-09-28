@@ -6,19 +6,16 @@ import Image from "next/image";
 const Nav = () => (
   <div>
     <nav className="flex md:hidden justify-between w-full">
-      <p className="font-a text-owhite">Snippets</p>
+      <p className="font-a text-owhite text-2xl">Snippets</p>
       <div className="flex space-x-4">
-        <button className="bg-owhite text-dark p-1 rounded-lg font-bold text-sm">
-          Sign up
-        </button>
-        <button className="bg-opink text-dark rounded-lg font-bold text-sm p-1">
-          Login
-        </button>
+        <div className="w-5">
+          <Image src={bars} />
+        </div>
       </div>
     </nav>
 
     <nav className="hidden md:flex justify-between text-owhite mb-20 ">
-      <p className="font-a text-owhite text-xl">Snippets</p>
+      <p className="font-a text-owhite text-3xl">Snippets</p>
       <div className="flex justify-end space-x-10 text-xl">
         <p>Home</p>
         <p>Explore</p>
