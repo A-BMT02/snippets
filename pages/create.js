@@ -61,7 +61,7 @@ export default function Create() {
                 <Editor
                   className=""
                   height="300px"
-                  defaultLanguage="markdown"
+                  defaultLanguage="javascript"
                   defaultValue=""
                   onChange={handleEditorChange}
                   theme="vs-dark"

@@ -15,7 +15,11 @@ export default function Nav() {
 
   return (
     <div>
-      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      <Sidebar
+        Ref={ref}
+        showSidebar={showSidebar}
+        setShowSidebar={setShowSidebar}
+      />
       <nav className="flex md:hidden justify-between w-full">
         <p className="font-a text-owhite text-2xl">Snippets</p>
         <div className="flex space-x-4">
