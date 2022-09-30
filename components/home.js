@@ -5,6 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import Sidebar from "./sidebar";
 
 export default function Home() {
   const [ref, inView] = useInView();
