@@ -4,8 +4,9 @@ import Image from "next/image";
 import profile from "../images/profile.png";
 import star from "../images/star.png";
 import test2 from "../images/test2.png";
+import Link from "next/link";
 
-export default function Explore() {
+export default function Mysnippets() {
   return (
     <div className="flex flex-col p-5">
       <Nav />
@@ -15,22 +16,32 @@ export default function Explore() {
             My snippets
           </p>
           <div className="w-full flex flex-col items-center md:space-y-6">
-            <div className="hidden md:flex rounded-3xl items-center font-bold w-full max-w-[800px] p-3 bg-owhite justify-between text-xl">
+            <div className="hidden md:flex rounded-3xl items-center font-bold w-full max-w-[800px] p-1 bg-owhite justify-between text-xl">
               <div className="rounded-3xl p-2 bg-dark text-owhite ">
                 <p>My Snippets</p>
               </div>
-              <div className="rounded-3xl p-2">
-                <p>Browse</p>
-              </div>
-              <div className="rounded-3xl p-2">
-                <p>Create</p>
-              </div>
+              <Link href="/browse">
+                <div className="rounded-3xl p-2">
+                  <p>Browse</p>
+                </div>
+              </Link>
+
+              <Link href="/create">
+                <div className="rounded-3xl p-2">
+                  <p>Create</p>
+                </div>
+              </Link>
             </div>
             <div className="w-full max-w-[500px] flex justify-center">
               <input
                 className="p-2 rounded-xl w-full"
                 placeholder="Search snippets..."
               />
+            </div>
+            <div className="hidden md:block w-full">
+              <p className="self-left text-opink font-bold text-3xl ">
+                My Snippets
+              </p>
             </div>
           </div>
 

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import bars from "../images/bars.png";
-
 import Image from "next/image";
 
 const Nav = () => (
@@ -18,7 +17,9 @@ const Nav = () => (
       <p className="font-a text-owhite text-3xl">Snippets</p>
       <div className="flex justify-end space-x-10 text-xl">
         <p>Home</p>
-        <p>Explore</p>
+        <Link href="/browse">
+          <p>Explore</p>
+        </Link>
         <p>Sign up</p>
         <p>Login</p>
       </div>
