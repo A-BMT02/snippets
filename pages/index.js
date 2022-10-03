@@ -10,7 +10,7 @@ import Home from "../components/home";
 export default () => (
   <div>
     <Head />
-    <div className="ml-5 mr-5 mt-5">
+    <div className="ml-5 mr-5 mt-5 md:ml-20 md:mr-20 md:mt-10">
       <Nav />
 
       <div className="flex flex-col mt-10 space-y-6 items-center">

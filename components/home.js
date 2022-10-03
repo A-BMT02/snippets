@@ -5,6 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import Sidebar from "./sidebar";
 
 export default function Home() {
   const [ref, inView] = useInView();
@@ -23,25 +24,28 @@ export default function Home() {
   useEffect(() => {
     if (inView) {
       control.start("visible");
-    } else {
-      control.start("hidden");
     }
+    // else {
+    //   control.start("hidden");
+    // }
   }, [control, inView]);
 
   useEffect(() => {
     if (inView2) {
       control2.start("visible");
-    } else {
-      control2.start("hidden");
     }
+    // else {
+    //   control2.start("hidden");
+    // }
   }, [control2, inView2]);
 
   useEffect(() => {
     if (inView3) {
       control3.start("visible");
-    } else {
-      control3.start("hidden");
     }
+    // else {
+    //   control3.start("hidden");
+    // }
   }, [control3, inView3]);
 
   return (

@@ -12,13 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@monaco-editor/react": "^4.4.6",
     "framer-motion": "^7.3.6",
     "monaco-editor": "^0.34.0",
     "next": "^12.3.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intersection-observer": "^9.4.0"
+    "react-intersection-observer": "^9.4.0",
+    "react-router-dom": "^6.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
