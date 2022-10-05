@@ -1,6 +1,5 @@
 import Link from "next/link";
 import bars from "../images/bars.png";
-import Image from "next/image";
 import { useState, useRef } from "react";
 import Sidebar from "./sidebar";
 
