@@ -21,11 +21,17 @@ export default () => (
           <span className="text-opink font-bold">productivity</span>
         </h3>
         <div>
+
+       
           <Link href="/browse">
+
           <button className="bg-owhite text-dark p-2 rounded-lg font-bold text-sm md:text-lg md:p-4 hover:bg-dark hover:border hover:border-opink hover:text-owhite">
-            Explore
+          Explore
           </button>
           </Link>
+
+            
+
         </div>
       </div>
 
