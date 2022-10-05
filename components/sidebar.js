@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { useData } from "../Context/dataContext";
 
 export default function Sidebar({ showSidebar, setShowSidebar, Ref }) {
-  const [active, setActive] = useState("");
   const router = useRouter();
 
+  const { activeNavbar, setActiveNavbar } = useData();
+
   useEffect(() => {
-    if (active === "") {
-      setActive("home");
+    if (activeNavbar === "") {
+      setActiveNavbar("home");
     }
-  }, [active]);
+  }, [activeNavbar]);
   const goto = (text) => {
-    setActive(text);
+    setActiveNavbar(text);
     Ref.current.classList.toggle("open");
     setShowSidebar(false);
 
@@ -34,25 +36,25 @@ export default function Sidebar({ showSidebar, setShowSidebar, Ref }) {
     >
       <p
         onClick={(e) => goto("home")}
-        className={`mt-20 ${active === "home" && "text-dark"}`}
+        className={`mt-20 ${activeNavbar === "home" && "text-dark"}`}
       >
         Home
       </p>
       <p
         onClick={(e) => goto("explore")}
-        className={`${active === "explore" && "text-dark"}`}
+        className={`${activeNavbar === "explore" && "text-dark"}`}
       >
         Explore
       </p>
       <p
         onClick={(e) => goto("login")}
-        className={`${active === "login" && "text-dark"}`}
+        className={`${activeNavbar === "login" && "text-dark"}`}
       >
         Login
       </p>
       <p
         onClick={(e) => goto("sign up")}
-        className={`${active === "sign up" && "text-dark"}`}
+        className={`${activeNavbar === "sign up" && "text-dark"}`}
       >
         Sign up
       </p>
