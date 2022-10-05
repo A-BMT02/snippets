@@ -41,7 +41,9 @@ export default function Nav() {
       <nav className="hidden md:flex justify-between text-owhite mb-10 ">
         <p className="font-a text-owhite text-3xl">Snippets</p>
         <div className="flex justify-end space-x-10 text-xl">
-          <p className="cursor-pointer">Home</p>
+          <Link href="/">
+            <p className="cursor-pointer">Home</p>
+          </Link>
           <Link href="/browse">
             <p className="cursor-pointer">Explore</p>
           </Link>
