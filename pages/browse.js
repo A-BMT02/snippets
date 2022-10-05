@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Browse() {
   return (
     <div className="flex flex-col p-5">
-     /* <Nav />*/
+       <Nav />
       <div className="flex justify-center mt-12 md:mt-0">
         <div className="flex flex-col space-y-6 w-full max-w-[500px] md:max-w-[700px]">
           <p className="text-opink font-bold text-3xl md:hidden ">
