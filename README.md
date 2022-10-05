@@ -1,44 +1,85 @@
 # Codepets
-Store and browse your favorite and most used code snippets
 
-# 👨‍💻 Demo
-https://codepets.vercel.app/
+This is an app designed to store and browse through a collection of your most used code snippets.
 
-![image](https://user-images.githubusercontent.com/30394037/192660744-698a74a4-220e-4a8a-841a-cc5519ddca01.png)
+## 👨‍💻 Demo
 
-# ✏️ Design File
-https://www.figma.com/file/asYmiNQAfRLMNSvk5eecN6/Untitled?node-id=0%3A1
+Explore the app functionality [here](https://codepets.netlify.app/).
 
-# ⚒️ Technologies Used
-* React
-* NextJS
-* Tailwind
+![screenshot](./images/save-it.png)
 
-# 👇 Prerequisites
-Make sure you have the following installed before making a contribution
-* Git
-* NodeJS
+### ✏️ Design File
 
-# 🛠️ Installation Steps
-1. Fork the project
-2. Clone the project using the command:
-````git clone https://github.com/<your-github-username>/snippets````
-3. Navigate to the project directory using:
-````cd snippets````
-4. Install the Dependencies using:
-````npm install````
-5. Run the project 
-````npm run dev````
+Interested in the design of this app? Check out the [Figma file](https://www.figma.com/file/asYmiNQAfRLMNSvk5eecN6/Untitled?node-id=0%3A1).
 
-# When Done Contributing
-1. Create a new branch using:
-````git checkout -b <BranchName>````
-2. Add to Stage using:
-````git add .````
-3. Commit changes using:
-````git commit -m 'enter-commit-message-here'````
-4. Push your changes using:
-````git push````
+### ⚒️ Technologies Used
+
+This project was built using the following technologies:
+
+- React
+- NextJS
+- Tailwind
+
+### 👇 Prerequisites
+
+To get this project up and running locally, you must already have installed the following packages on your computer.
+
+- [Node.js](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
+
+### 🛠️ Contribution Guidelines
+
+Want to contribute to this project? Follow the steps below to set up the project locally.
+
+1. Fork this repository.
+2. Clone your forked repository to your local machine.
+
+```
+git clone https://github.com/<your-github-username>/snippets.git
+```
+
+3. Navigate to the project directory:
+
+```
+cd codepets
+```
+
+4. Install the dependencies:
+
+```
+npm install
+```
+
+5. Create a new branch:
+
+```
+git checkout -b <your-branch-name>
+```
+
+At this point, you can now modify existing files or add new files to the project on your own branch.
+
+6. Stage your changes and commit
+
+Once you have modified existing files or added new files to the project, you can add them to your local repository, which you can do with the `git add` command.
+
+_Add changes_
+
+```
+git add .
+```
+
+_Commit changes_
+
+```
+git commit -m "commit message"
+```
+
+7. Push your changes to GitHub:
+
+```
+git push -u origin <your-branch-name>
+```
 
 # ❗ Reminder
+
 Dont forget to drop a star ✨ while you're here
