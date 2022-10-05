@@ -38,15 +38,15 @@ export default function Nav() {
         </div>
       </nav>
 
-      <nav className="hidden md:flex justify-between text-owhite mb-20 ">
+      <nav className="hidden md:flex justify-between text-owhite mb-10 ">
         <p className="font-a text-owhite text-3xl">Snippets</p>
         <div className="flex justify-end space-x-10 text-xl">
-          <p>Home</p>
+          <p className="cursor-pointer">Home</p>
           <Link href="/browse">
-            <p>Explore</p>
+            <p className="cursor-pointer">Explore</p>
           </Link>
-          <p>Sign up</p>
-          <p>Login</p>
+          <p className="cursor-pointer">Sign up</p>
+          <p className="cursor-pointer">Login</p>
         </div>
       </nav>
     </div>
