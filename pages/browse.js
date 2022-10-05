@@ -24,7 +24,7 @@ export default function Browse() {
               </Link>
 
               <div className="rounded-3xl p-3 bg-dark text-owhite cursor-pointer ">
-                <p>Browse </p>
+                <p>Browse</p>
               </div>
               <Link href="/create">
                 <div className="rounded-3xl p-3 cursor-pointer">
