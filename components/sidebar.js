@@ -36,25 +36,25 @@ export default function Sidebar({ showSidebar, setShowSidebar, Ref }) {
     >
       <p
         onClick={(e) => goto("home")}
-        className={`mt-20 ${activeNavbar === "home" && "text-dark"}`}
+        className={`mt-20 cursor-pointer ${activeNavbar === "home" && "text-dark "}`}
       >
         Home
       </p>
       <p
         onClick={(e) => goto("explore")}
-        className={`${activeNavbar === "explore" && "text-dark"}`}
+        className={`cursor-pointer ${activeNavbar === "explore" && "text-dark"}`}
       >
         Explore
       </p>
       <p
         onClick={(e) => goto("login")}
-        className={`${activeNavbar === "login" && "text-dark"}`}
+        className={`cursor-pointer ${activeNavbar === "login" && "text-dark"}`}
       >
         Login
       </p>
       <p
         onClick={(e) => goto("sign up")}
-        className={`${activeNavbar === "sign up" && "text-dark"}`}
+        className={`cursor-pointer ${activeNavbar === "sign up" && "text-dark"}`}
       >
         Sign up
       </p>

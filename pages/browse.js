@@ -9,11 +9,11 @@ import Link from "next/link";
 export default function Browse() {
   return (
     <div className="flex flex-col p-5">
-      <Nav />
+     /* <Nav />*/
       <div className="flex justify-center mt-12 md:mt-0">
         <div className="flex flex-col space-y-6 w-full max-w-[500px] md:max-w-[700px]">
           <p className="text-opink font-bold text-3xl md:hidden ">
-            Browse Snippets
+            Browse  Snippets
           </p>
           <div className="w-full flex flex-col items-center md:space-y-6">
             <div className="hidden md:flex rounded-3xl items-center font-bold w-full max-w-[800px] p-1 bg-owhite justify-between text-xl">
@@ -24,7 +24,7 @@ export default function Browse() {
               </Link>
 
               <div className="rounded-3xl p-3 bg-dark text-owhite cursor-pointer ">
-                <p>Browse</p>
+                <p>Browse </p>
               </div>
               <Link href="/create">
                 <div className="rounded-3xl p-3 cursor-pointer">
