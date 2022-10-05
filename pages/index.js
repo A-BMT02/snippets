@@ -22,8 +22,7 @@ export default () => (
         </h3>
         <div>
 
-          <Link href="/browse" >
-=======
+       
           <Link href="/browse">
 
           <button className="bg-owhite text-dark p-2 rounded-lg font-bold text-sm md:text-lg md:p-4 hover:bg-dark hover:border hover:border-opink hover:text-owhite">
@@ -32,7 +31,6 @@ export default () => (
           </Link>
 
             
-=======
 
         </div>
       </div>
