@@ -98,8 +98,8 @@ export default function Create() {
                 </div>
 
                 <div className="w-full flex justify-end">
-                  <div className="rounded-md bg-dark text-owhite p-2 w-fit ">
-                    <p className="text-xl md:text-2xl cursor-pointer">Save</p>
+                  <div className="rounded-md bg-dark text-owhite p-2 w-fit cursor-pointer">
+                    <p className="text-xl md:text-2xl">Save</p>
                   </div>
                 </div>
               </div>
