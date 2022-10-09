@@ -25,7 +25,7 @@ export default () => (
        
           <Link href="/browse">
 
-          <button className="bg-owhite text-dark p-2 rounded-lg font-bold text-sm md:text-lg md:p-4 hover:bg-dark hover:border hover:border-opink hover:text-owhite">
+          <button className="bg-owhite text-dark border p-2 rounded-lg font-bold text-sm md:text-lg md:p-4 hover:bg-dark hover:border hover:border-opink hover:text-owhite">
           Explore
           </button>
           </Link>
