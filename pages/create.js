@@ -1,10 +1,28 @@
 import Nav from "../components/nav";
 import Editor from "@monaco-editor/react";
 import Link from "next/link";
+import { useState } from "react";
+import cancel from "../images/cancel.svg";
+import Image from "next/image";
 
 export default function Create() {
+  const [tags, setTags] = useState([]);
+  const [value, setValue] = useState("");
+
   const handleEditorChange = (value, event) => {
     console.log("value is ", value);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      setTags((prev) => [...prev, value]);
+      setValue("");
+    }
+  };
+
+  const removeTag = (value) => {
+    const newTag = tags.filter((target) => target !== value);
+    setTags(newTag);
   };
 
   return (
@@ -80,24 +98,33 @@ export default function Create() {
 
                 <div className="w-full flex flex-col space-y-2">
                   <p className="text-xl text-xl font-bold md:text-2xl">Tags</p>
-                  <input
-                    className="p-2 bg-dark w-full rounded-lg text-owhite md:text-lg"
-                    placeholder="Input snippet title"
-                  />
+                  {tags.length < 3 && (
+                    <input
+                      className="p-2 bg-dark w-full rounded-lg text-owhite md:text-lg"
+                      placeholder="Input snippet title"
+                      onKeyDown={handleKeyDown}
+                      value={value}
+                      onChange={(e) => setValue(e.target.value)}
+                    />
+                  )}
+
                   <div className="flex space-x-2 ">
-                    <div className="rounded-md bg-dark text-owhite p-1 md:p-2">
-                      <p>HTML</p>
-                    </div>
-                    <div className="rounded-md bg-dark text-owhite p-1 md:p-2">
-                      <p>CSS</p>
-                    </div>
-                    <div className="rounded-md bg-dark text-owhite p-1 md:p-2">
-                      <p>Javascript</p>
-                    </div>
+                    {tags.map((value) => (
+                      <div className="relative rounded-md bg-dark text-owhite p-1 md:p-2">
+                        <div
+                          className="absolute -top-3 -right-1 w-3"
+                          onClick={(e) => removeTag(value)}
+                        >
+                          <Image src={cancel} />
+                        </div>
+
+                        <p>{value}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
-                <div className="w-full flex justify-end">
+                <div className="w-full flex justify-end mb-10">
                   <div className="rounded-md bg-dark text-owhite p-2 w-fit ">
                     <p className="text-xl md:text-2xl">Save</p>
                   </div>
