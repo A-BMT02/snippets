@@ -1,6 +1,5 @@
 import Link from "next/link";
 import bars from "../images/bars.png";
-import Image from "next/image";
 import { useState, useRef } from "react";
 import Sidebar from "./sidebar";
 
@@ -21,25 +20,27 @@ export default function Nav() {
         setShowSidebar={setShowSidebar}
       />
       <nav className="flex md:hidden justify-between w-full">
-        <p className="font-a text-owhite text-2xl">Snippets</p>
+        <Link href="/" >
+        <p className="font-a text-owhite text-2xl cursor-pointer" >Snippets</p></Link>
         <div className="flex space-x-4">
           <button
             ref={ref}
             id="menu-btn"
-            class="block hamburger focus:outline-none z-20"
+            className="block hamburger focus:outline-none z-20"
             onClick={(e) => {
               toggleSidebar();
             }}
           >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
+            <span className="hamburger-top"></span>
+            <span className="hamburger-middle"></span>
+            <span className="hamburger-bottom"></span>
           </button>
         </div>
       </nav>
 
       <nav className="hidden md:flex justify-between text-owhite mb-10 ">
-        <p className="font-a text-owhite text-3xl">Snippets</p>
+        <Link href="/" >
+        <p className="font-a text-owhite text-3xl cursor-pointer"> Snippets </p></Link>
         <div className="flex justify-end space-x-10 text-xl">
           <Link href="/">
             <p className="cursor-pointer">Home</p>
