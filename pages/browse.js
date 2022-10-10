@@ -5,8 +5,11 @@ import profile from "../images/profile.png";
 import star from "../images/star.png";
 import test2 from "../images/test2.png";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Browse() {
+  const router = useRouter();
+
   return (
     <div className="flex flex-col p-5">
        <Nav />
@@ -45,7 +48,10 @@ export default function Browse() {
             </div>
           </div>
 
-          <div className="bg-owhite rounded-xl flex flex-col space-y-2 md:space-y-3 items-start p-2 pt-2 pb-2">
+          <div
+            onClick={(e) => router.push("/onesnippet")}
+            className="bg-owhite rounded-xl flex flex-col space-y-2 md:space-y-3 items-start p-2 pt-2 pb-2"
+          >
             <p className="text-2xl md:text-3xl self-center font-bold">
               Navbar with CSS
             </p>
