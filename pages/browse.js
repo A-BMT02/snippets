@@ -49,7 +49,7 @@ export default function Browse() {
           </div>
 
           <div
-            onClick={(e) => router.push("/onesnippet")}
+            onClick={(e) => router.push("/snippet")}
             className="bg-owhite rounded-xl flex flex-col space-y-2 md:space-y-3 items-start p-2 pt-2 pb-2"
           >
             <p className="text-2xl md:text-3xl self-center font-bold">
