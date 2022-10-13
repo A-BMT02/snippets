@@ -82,4 +82,4 @@ git push -u origin <your-branch-name>
 
 # ❗ Reminder
 
-Dont forget to drop a star ✨ while you're here
+Don't forget to drop a star ✨ while you're here!
