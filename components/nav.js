@@ -40,16 +40,16 @@ export default function Nav() {
 
       <nav className="hidden md:flex justify-between text-owhite mb-10 ">
         <Link href="/" >
-        <p className="font-a text-owhite text-3xl cursor-pointer"> Snippets </p></Link>
+        <p className="font-a text-owhite text-3xl cursor-pointer hover:text-opink font-bold"> Snippets </p></Link>
         <div className="flex justify-end space-x-10 text-xl">
           <Link href="/">
-            <p className="cursor-pointer">Home</p>
+            <p className="cursor-pointer hover:text-opink font-bold">Home</p>
           </Link>
           <Link href="/browse">
-            <p className="cursor-pointer">Explore</p>
+            <p className="cursor-pointer hover:text-opink font-bold">Explore</p>
           </Link>
-          <p className="cursor-pointer">Sign up</p>
-          <p className="cursor-pointer">Login</p>
+          <p className="cursor-pointer hover:text-opink font-bold">Sign up</p>
+          <p className="cursor-pointer hover:text-opink font-bold">Login</p>
         </div>
       </nav>
     </div>
