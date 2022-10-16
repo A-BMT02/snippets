@@ -1,16 +1,26 @@
+import React from "react";
 import Link from "next/link";
-import bars from "../images/bars.png";
 import { useState, useRef } from "react";
 import Sidebar from "./sidebar";
+import { useData } from "../Context/dataContext";
+import { getNavByPath } from "../helper/navigations";
 
 export default function Nav() {
   const [showSidebar, setShowSidebar] = useState(false);
+  const { activeNavbar } = useData();
   const ref = useRef(null);
-
   const toggleSidebar = () => {
     ref.current.classList.toggle("open");
     setShowSidebar(!showSidebar);
   };
+  const NavLink = ({ pathName, label }) => {
+    const selectedClass = activeNavbar === getNavByPath(pathName) && "border-b-4 border-opink";
+    const className = `cursor-pointer pr-4 hover:text-opink font-bold ${selectedClass}`;
+    return (
+    <Link href={pathName}>
+      <p className={className}>{label}</p>
+    </Link>
+  )}
 
   return (
     <div>
@@ -42,14 +52,10 @@ export default function Nav() {
         <Link href="/" >
         <p className="font-a text-owhite text-3xl cursor-pointer hover:text-opink font-bold"> Snippets </p></Link>
         <div className="flex justify-end space-x-10 text-xl">
-          <Link href="/">
-            <p className="cursor-pointer hover:text-opink font-bold">Home</p>
-          </Link>
-          <Link href="/browse">
-            <p className="cursor-pointer hover:text-opink font-bold">Explore</p>
-          </Link>
-          <p className="cursor-pointer hover:text-opink font-bold">Sign up</p>
-          <p className="cursor-pointer hover:text-opink font-bold">Login</p>
+          <NavLink pathName='/' label='Home'  />
+          <NavLink pathName='/browse' label='Explore'  />
+          <NavLink pathName='/register' label='Sign up'  />
+          <NavLink pathName='/login' label='Login'  />
         </div>
       </nav>
     </div>

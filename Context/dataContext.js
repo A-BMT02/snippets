@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext } from "react";
+import { useRouter } from "next/router";
+import { getNavByPath } from "../helper/navigations";
 
 export const dataContext = createContext();
 
@@ -7,12 +9,10 @@ export const useData = () => {
 };
 
 export const DataContextProvider = (props) => {
-  const [activeNavbar, setActiveNavbar] = useState("");
+  const router = useRouter();
+  const activeNavbar = getNavByPath(router.asPath);
+  const value = { activeNavbar };
 
-  const value = {
-    activeNavbar,
-    setActiveNavbar,
-  };
   return (
     <dataContext.Provider value={value}>{props.children}</dataContext.Provider>
   );
