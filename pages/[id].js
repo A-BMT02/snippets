@@ -6,7 +6,6 @@ import share from "../images/share.svg";
 import deleteIcon from "../images/deleteIcon.svg";
 import profile from "../images/profile.png";
 import star from "../images/star.png";
-import Editor from "@monaco-editor/react";
 import snippet from "../images/snippet.png";
 
 export default function OneSnippet() {

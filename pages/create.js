@@ -69,7 +69,7 @@ export default function Create() {
                 </div>
 
                 <div className="flex flex-col space-y-2 w-full md:w-1/2">
-                  <p className="text-xl text-xl font-bold md:text-2xl">
+                  <p className="text-xl font-bold md:text-2xl">
                     Language
                   </p>
                   <select className="p-2 bg-dark w-full rounded-lg text-owhite md:text-lg">
@@ -81,7 +81,7 @@ export default function Create() {
                 </div>
 
                 <div className="w-full flex flex-col space-y-2">
-                  <p className="text-xl text-xl font-bold md:text-2xl">
+                  <p className="text-xl font-bold md:text-2xl">
                     Snippet
                   </p>
                   <div className="rounded-lg md:text-lg">
@@ -97,7 +97,7 @@ export default function Create() {
                 </div>
 
                 <div className="w-full flex flex-col space-y-2">
-                  <p className="text-xl text-xl font-bold md:text-2xl">Tags</p>
+                  <p className="text-xl font-bold md:text-2xl">Tags</p>
                   {tags.length < 3 && (
                     <input
                       className="p-2 bg-dark w-full rounded-lg text-owhite md:text-lg"
