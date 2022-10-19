@@ -19,18 +19,18 @@ export default function Browse() {
             Browse Snippets
           </p>
           <div className="w-full flex flex-col items-center md:space-y-6">
-            <div className="hidden md:flex rounded-3xl items-center font-bold w-full max-w-[800px] p-1 bg-owhite justify-between text-xl">
+            <div className="hidden md:flex rounded-xl items-center font-bold w-full max-w-[800px] py-4 px-6 bg-owhite justify-between text-xl ">
               <Link href="/mysnippets">
-                <div className="rounded-3xl p-3 cursor-pointer">
+                <div className="rounded-lg p-3 cursor-pointer hover:bg-dark duration-300 ease-in-out hover:text-owhite">
                   <p>My Snippets</p>
                 </div>
               </Link>
 
-              <div className="rounded-3xl p-3 bg-dark text-owhite cursor-pointer ">
+              <div className="rounded-lg p-3 bg-dark text-owhite cursor-pointer ">
                 <p>Browse</p>
               </div>
               <Link href="/create">
-                <div className="rounded-3xl p-3 cursor-pointer">
+                <div className="rounded-lg p-3 cursor-pointer hover:bg-dark duration-300 ease-in-out hover:text-owhite">
                   <p>Create</p>
                 </div>
               </Link>
