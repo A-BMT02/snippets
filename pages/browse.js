@@ -37,7 +37,7 @@ export default function Browse() {
             </div>
             <div className="w-full max-w-[500px] flex justify-center">
               <input
-                className="p-2 rounded-xl w-full"
+                className="p-3 rounded-lg w-full px-4"
                 placeholder="Search snippets..."
               />
             </div>
