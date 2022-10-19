@@ -35,7 +35,7 @@ export default function Create() {
           </p>
           <div className="w-full flex flex-col items-center md:space-y-6">
             <div className="hidden md:flex rounded-xl items-center font-bold w-full max-w-[800px] py-4 px-6 bg-owhite justify-between text-xl ">
-              <Link href="/snippets">
+              <Link href="/mysnippets">
                 <div className="rounded-lg p-3 cursor-pointer hover:bg-dark duration-300 ease-in-out hover:text-owhite">
                   <p>My Snippets</p>
                 </div>
