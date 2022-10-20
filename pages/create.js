@@ -33,23 +33,33 @@ export default function Create() {
           <p className="text-opink font-bold text-3xl md:hidden ">
             Create Snippet
           </p>
-          <div className="hidden md:flex justify-center w-full mb-10">
-            <div className="hidden md:flex rounded-3xl items-center font-bold w-full max-w-[800px] p-1 bg-owhite justify-between text-xl">
+          <div className="w-full flex flex-col items-center md:space-y-6">
+            <div className="hidden md:flex rounded-xl items-center font-bold w-full max-w-[800px] py-4 px-6 bg-owhite justify-between text-xl ">
               <Link href="/mysnippets">
-                <div className="rounded-3xl p-3 cursor-pointer">
+                <div className="rounded-lg p-3 cursor-pointer hover:bg-dark duration-300 ease-in-out hover:text-owhite">
                   <p>My Snippets</p>
                 </div>
               </Link>
 
               <Link href="/browse">
-                <div className="rounded-3xl p-3 cursor-pointer">
-                  <p>Browse</p>
-                </div>
-              </Link>
-
-              <div className="rounded-3xl p-3 bg-dark text-owhite cursor-pointer ">
-                <p>Create</p>
+              <div className="rounded-lg p-3 cursor-pointer hover:bg-dark duration-300 ease-in-out hover:text-owhite ">
+                <p>Browse</p>
               </div>
+              </Link>
+                <div className="rounded-lg p-3 bg-dark text-owhite cursor-pointer">
+                  <p>Create</p>
+                </div>
+            </div>
+            <div className="w-full max-w-[500px] flex justify-center">
+              <input
+                className="p-3 rounded-lg w-full px-4"
+                placeholder="Search snippets..."
+              />
+            </div>
+            <div className="hidden md:block w-full">
+              <p className="self-left text-opink font-bold text-3xl ">
+                Browse Snippets
+              </p>
             </div>
           </div>
 

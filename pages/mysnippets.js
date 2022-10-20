@@ -16,34 +16,35 @@ export default function Mysnippets() {
             My snippets
           </p>
           <div className="w-full flex flex-col items-center md:space-y-6">
-            <div className="hidden md:flex rounded-3xl items-center font-bold w-full max-w-[800px] p-1 bg-owhite justify-between text-xl">
-              <div className="rounded-3xl p-2 bg-dark text-owhite cursor-pointer ">
-                <p>My Snippets</p>
-              </div>
-              <Link href="/browse">
-                <div className="rounded-3xl p-2 cursor-pointer">
-                  <p>Browse</p>
+            <div className="hidden md:flex rounded-xl items-center font-bold w-full max-w-[800px] py-4 px-6 bg-owhite justify-between text-xl ">
+                <div className="rounded-lg p-3 bg-dark text-owhite cursor-pointer">
+                  <p>My Snippets</p>
                 </div>
-              </Link>
 
+              <Link href="/browse">
+              <div className="rounded-lg p-3 cursor-pointer hover:bg-dark duration-300 ease-in-out hover:text-owhite ">
+                <p>Browse</p>
+              </div>
+              </Link>
               <Link href="/create">
-                <div className="rounded-3xl p-2 cursor-pointer">
+                <div className="rounded-lg p-3 cursor-pointer hover:bg-dark duration-300 ease-in-out hover:text-owhite">
                   <p>Create</p>
                 </div>
               </Link>
             </div>
             <div className="w-full max-w-[500px] flex justify-center">
               <input
-                className="p-2 rounded-xl w-full"
+                className="p-3 rounded-lg w-full px-4"
                 placeholder="Search snippets..."
               />
             </div>
             <div className="hidden md:block w-full">
               <p className="self-left text-opink font-bold text-3xl ">
-                My Snippets
+                Browse Snippets
               </p>
             </div>
           </div>
+
 
           <div className="bg-owhite rounded-xl flex flex-col space-y-2 md:space-y-3 items-start p-2 pt-2 pb-2">
             <p className="text-2xl md:text-3xl self-center font-bold">
