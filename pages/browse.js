@@ -67,14 +67,14 @@ export default function Browse() {
                 <p className="text-xs md:text-lg">by AhmadBMTahir</p>
               </div>
               <div className="flex space-x-2">
-                <button className="p-1 bg-dark text-owhite rounded-lg text-xs md:text-lg rounded-lg">
+                <button className="p-1 bg-dark text-owhite text-xs md:text-lg rounded-lg">
                   HTML
                 </button>
-                <button className="p-1 bg-dark text-owhite rounded-lg text-xs md:text-lg rounded-lg">
+                <button className="p-1 bg-dark text-owhite text-xs md:text-lg rounded-lg">
                   CSS
                 </button>
 
-                <button className="p-1 bg-dark text-owhite rounded-lg text-xs md:text-lg rounded-lg">
+                <button className="p-1 bg-dark text-owhite text-xs md:text-lg rounded-lg">
                   Javascript
                 </button>
               </div>
@@ -103,14 +103,14 @@ export default function Browse() {
                 <p className="text-xs md:text-lg">by AhmadBMTahir</p>
               </div>
               <div className="flex space-x-2">
-                <button className="p-1 bg-dark text-owhite rounded-lg text-xs md:text-lg rounded-lg">
+                <button className="p-1 bg-dark text-owhite text-xs md:text-lg rounded-lg">
                   HTML
                 </button>
-                <button className="p-1 bg-dark text-owhite rounded-lg text-xs md:text-lg rounded-lg">
+                <button className="p-1 bg-dark text-owhite text-xs md:text-lg rounded-lg">
                   CSS
                 </button>
 
-                <button className="p-1 bg-dark text-owhite rounded-lg text-xs md:text-lg rounded-lg">
+                <button className="p-1 bg-dark text-owhite text-xs md:text-lg rounded-lg">
                   Javascript
                 </button>
               </div>
@@ -139,14 +139,14 @@ export default function Browse() {
                 <p className="text-xs md:text-lg">by AhmadBMTahir</p>
               </div>
               <div className="flex space-x-2">
-                <button className="p-1 bg-dark text-owhite rounded-lg text-xs md:text-lg rounded-lg">
+                <button className="p-1 bg-dark text-owhite text-xs md:text-lg rounded-lg">
                   HTML
                 </button>
-                <button className="p-1 bg-dark text-owhite rounded-lg text-xs md:text-lg rounded-lg">
+                <button className="p-1 bg-dark text-owhite text-xs md:text-lg rounded-lg">
                   CSS
                 </button>
 
-                <button className="p-1 bg-dark text-owhite rounded-lg text-xs md:text-lg rounded-lg">
+                <button className="p-1 bg-dark text-owhite text-xs md:text-lg rounded-lg">
                   Javascript
                 </button>
               </div>
