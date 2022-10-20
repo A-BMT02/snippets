@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import Sidebar from "./sidebar";
 import { useData } from "../Context/dataContext";
 import { getNavByPath } from "../helper/navigations";
+import ToogleLight from "./toggle-light";
 
 export default function Nav() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -23,7 +24,7 @@ export default function Nav() {
   )}
 
   return (
-    <div>
+    <div className="relative">
       <Sidebar
         Ref={ref}
         showSidebar={showSidebar}
@@ -58,6 +59,7 @@ export default function Nav() {
           <NavLink pathName='/login' label='Login'  />
         </div>
       </nav>
+      <ToogleLight />
     </div>
   );
 }
