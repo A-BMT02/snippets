@@ -34,7 +34,7 @@ export default function Create() {
             <p className="text-2xl font-semibold">Sign up</p>
           </div>
 
-          <div className="self-center rounded-3xl bg-dark  w-full cursor-pointer py-4 px-10 flex justify-center select-none">
+          <div className="self-center rounded-3xl bg-dark  w-full cursor-pointer py-4 flex justify-center select-none">
             <Image src={googleIcon} />
             <p className="text-xl md:text-2xl font-semibold text-owhite ml-4">Sign in with Google</p>
           </div>
