@@ -6,10 +6,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      dark: "#1D2127",
-      opink: "#F999CB",
-      owhite: "#FFFFFF",
-      dblue: "#323843",
+      bg: "var(--bg)",
+      dark: "var(--dark)",
+      opink: "var(--opink)",
+      owhite: "var(--owhite)",
+      dblue: "var(--dblue)",
     },
     extend: {
       fontFamily: {

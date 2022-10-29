@@ -2,8 +2,24 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+:root {
+    --bg: hsl(216, 15%, 13%);
+    --dark: #1D2127;
+    --opink: #F999CB;
+    --owhite: #FFFFFF;
+    --dblue: #32384;
+}
+
+.light-mode {
+    --bg: #becbdf;
+    --dark: #FFFFFF;
+    --owhite: #1D2127;
+    --dblue: #32384;
+    color: #fff;
+}
+
 html {
-    background-color: hsl(216, 15%, 13%) ;
+    background-color: theme('colors.bg');
     font-family: system-ui;
     font-family: 'Inconsolata', monospace;
 }
